@@ -1,19 +1,51 @@
 * {
   list-style: none;
   text-decoration: none;
-  margin: 5px;
+  margin: 3px;
 }
 .filter__container {
   border-radius: 5px;
   background: #bbf7f1d3;
-  width: 550px;
+  width: auto;
   padding: 20px;
+  margin-bottom: 20px;
   text-align: center;
+  @media all and (min-width: 768px) {
+    width: 550px;
+  }
+}
+.filter__radio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media all and (min-width: 768px) {
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 
 .form__label {
-  margin-left: 30px;
+  padding: 2px 2px 0 2px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+  @media all and (min-width: 768px) {
+    margin: 0 3px 0 15px;
+    align-items: center;
+    justify-content: center;
+  }
 }
+.list__joke {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @media all and (min-width: 768px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
 .punch {
   height: 100vh;
   display: flex;

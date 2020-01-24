@@ -11,7 +11,7 @@ function JokesList(props) {
           const { id, setup } = joke
           const route = `/joke/${id}`
           return (
-            <li key={id} >
+            <li key={id} className='list__joke'>
               <h3 className='title--medium '>{setup}</h3>
               <Link to={route}>
                 <button className='form__btn'>Tell me more</button>
