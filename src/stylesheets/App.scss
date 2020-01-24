@@ -3,6 +3,9 @@
   text-decoration: none;
   margin: 3px;
 }
+
+//filtros
+
 .filter__container {
   border-radius: 5px;
   background: #bbf7f1d3;
@@ -14,10 +17,12 @@
     width: 550px;
   }
 }
+
 .filter__radio {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 10px 0 10px 0;
   @media all and (min-width: 768px) {
     flex-direction: row;
     justify-content: center;
@@ -35,22 +40,39 @@
     justify-content: center;
   }
 }
-.list__joke {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  @media all and (min-width: 768px) {
+
+//lista de chistes
+
+.joke {
+  &__item {
+    display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 20px;
+    @media all and (min-width: 768px) {
+      align-items: flex-start;
+    }
   }
 }
 
+//punchline
+
 .punch {
+  font-size: 20px;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+.card__btn {
+  margin: 0;
+  width: 170px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
